@@ -22,32 +22,32 @@
     <ProjectGuid>{4C1E97F4-82B2-4362-AE1F-433F35D24E3C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SVG3</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -96,14 +96,16 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\dev\projects\Xml2Svg\resources;C:\Users\Administrator\dev\projects\Xml2Svg\lib\rapidxml;C:\Users\Administrator\dev\projects\Xml2Svg\lib\CImg;C:\Users\Administrator\dev\projects\Xml2Svg;C:\Users\Administrator\dev\projects\Xml2Svg\src;C:\Users\Administrator\dev\projects\Xml2Svg\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -139,59 +141,66 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <ClInclude Include="include\Attribute.h" />
+    <ClInclude Include="include\Circle.h" />
+    <ClInclude Include="include\Ellipse.h" />
+    <ClInclude Include="include\Figure.h" />
+    <ClInclude Include="include\Fill.h" />
+    <ClInclude Include="include\General.h" />
+    <ClInclude Include="include\Group.h" />
+    <ClInclude Include="include\Line.h" />
+    <ClInclude Include="include\ListFigure.h" />
+    <ClInclude Include="include\Path.h" />
+    <ClInclude Include="include\Point.h" />
+    <ClInclude Include="include\Polygon.h" />
+    <ClInclude Include="include\Polyline.h" />
+    <ClInclude Include="include\Rectagle.h" />
+    <ClInclude Include="include\RGB.h" />
+    <ClInclude Include="include\stdafx.h" />
+    <ClInclude Include="include\Stroke.h" />
+    <ClInclude Include="include\SVG3.h" />
+    <ClInclude Include="include\Test.h" />
+    <ClInclude Include="include\Text.h" />
+    <ClInclude Include="include\Transformer.h" />
+    <ClInclude Include="lib\CImg\CImg.h" />
+    <ClInclude Include="resources\Resource.h" />
+    <ClInclude Include="resources\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Circle.h" />
-    <ClInclude Include="Ellipse.h" />
-    <ClInclude Include="Figure.h" />
-    <ClInclude Include="Fill.h" />
-    <ClInclude Include="Line.h" />
-    <ClInclude Include="Point.h" />
-    <ClInclude Include="Polygon.h" />
-    <ClInclude Include="Polyline.h" />
-    <ClInclude Include="rapidxml.hpp" />
-    <ClInclude Include="rapidxml_iterators.hpp" />
-    <ClInclude Include="rapidxml_print.hpp" />
-    <ClInclude Include="rapidxml_utils.hpp" />
-    <ClInclude Include="Rectagle.h" />
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="RGB.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Stroke.h" />
-    <ClInclude Include="SVG3.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="Test.h" />
-    <ClInclude Include="Transformer.h" />
+    <ClCompile Include="src\Attribute.cpp" />
+    <ClCompile Include="src\Circle.cpp" />
+    <ClCompile Include="src\Ellipse.cpp" />
+    <ClCompile Include="src\Figure.cpp" />
+    <ClCompile Include="src\Fill.cpp" />
+    <ClCompile Include="src\General.cpp" />
+    <ClCompile Include="src\Group.cpp" />
+    <ClCompile Include="src\Line.cpp" />
+    <ClCompile Include="src\ListFigure.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Path.cpp" />
+    <ClCompile Include="src\Point.cpp" />
+    <ClCompile Include="src\Polygon.cpp" />
+    <ClCompile Include="src\Polyline.cpp" />
+    <ClCompile Include="src\Rectangle.cpp" />
+    <ClCompile Include="src\RGB.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="src\Stroke.cpp" />
+    <ClCompile Include="src\Test.cpp" />
+    <ClCompile Include="src\Text.cpp" />
+    <ClCompile Include="src\ToXML.cpp" />
+    <ClCompile Include="src\Transformer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="Ellipse.cpp" />
-    <ClCompile Include="Figure.cpp" />
-    <ClCompile Include="Fill.cpp" />
-    <ClCompile Include="Line.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Point.cpp" />
-    <ClCompile Include="Polygon.cpp" />
-    <ClCompile Include="Polyline.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
-    <ClCompile Include="RGB.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Stroke.cpp" />
-    <ClCompile Include="Test.cpp" />
-    <ClCompile Include="Transformer.cpp" />
+    <Text Include="lib\CImg\Licence_CeCILL-C_V1-en.txt" />
+    <Text Include="lib\CImg\Licence_CeCILL_V2-en.txt" />
+    <Text Include="lib\CImg\README.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="SVG3.rc" />
+    <Image Include="resources\small.ico" />
+    <Image Include="resources\SVG3.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="small.ico" />
-    <Image Include="SVG3.ico" />
+    <ResourceCompile Include="resources\SVG3.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

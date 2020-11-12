@@ -13,133 +13,174 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{f9872b0d-5985-4617-8d14-376487485a4e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <ClInclude Include="include\Circle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Ellipse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Figure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Polygon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Polyline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Rectagle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RGB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Stroke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SVG3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Transformer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\CImg\CImg.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\targetver.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\General.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Group.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ListFigure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Path.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SVG3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Circle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Ellipse.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Figure.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Fill.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Line.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Point.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Polygon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Polyline.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="rapidxml.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="rapidxml_iterators.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="rapidxml_print.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="rapidxml_utils.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rectagle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RGB.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Stroke.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Test.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Transformer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="src\Circle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Circle.cpp">
+    <ClCompile Include="src\Ellipse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Ellipse.cpp">
+    <ClCompile Include="src\Figure.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Figure.cpp">
+    <ClCompile Include="src\Fill.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Fill.cpp">
+    <ClCompile Include="src\Line.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Line.cpp">
+    <ClCompile Include="src\Point.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\Polygon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Point.cpp">
+    <ClCompile Include="src\Polyline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Polygon.cpp">
+    <ClCompile Include="src\Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Polyline.cpp">
+    <ClCompile Include="src\RGB.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Rectangle.cpp">
+    <ClCompile Include="src\Stroke.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RGB.cpp">
+    <ClCompile Include="src\Test.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Stroke.cpp">
+    <ClCompile Include="src\Transformer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Test.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Transformer.cpp">
+    <ClCompile Include="src\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Attribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\General.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Group.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ListFigure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Path.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Text.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ToXML.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="SVG3.rc">
+    <Text Include="lib\CImg\Licence_CeCILL_V2-en.txt">
+      <Filter>lib</Filter>
+    </Text>
+    <Text Include="lib\CImg\Licence_CeCILL-C_V1-en.txt">
+      <Filter>lib</Filter>
+    </Text>
+    <Text Include="lib\CImg\README.txt">
+      <Filter>lib</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\SVG3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\SVG3.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="small.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="SVG3.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
   </ItemGroup>
 </Project>
