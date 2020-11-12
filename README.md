@@ -1,4 +1,4 @@
-SVG Sparser and Render
+SVG Parser and Renderer
 ==========
 
 ## Parser
